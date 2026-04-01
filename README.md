@@ -159,3 +159,5 @@ est_theta = NC_SBL(Y, grid_theta)
 
 ### 相干源场景对比
 ![相干源场景](results/comparison_coherent.png)
+
+其余算法函数的单独仿真结果在results里。
