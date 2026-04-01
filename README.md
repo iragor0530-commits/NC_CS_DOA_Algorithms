@@ -149,15 +149,58 @@ est_theta = NC_SBL(Y, grid_theta)
 
 ---
 
-## 仿真结果展示
+## 仿真结果
 
-### RMSE vs SNR（含 NC-CRB 下界）
+### 五算法综合对比
+
+**RMSE vs SNR（含 NC-CRB 下界）**
 ![RMSE vs SNR](results/comparison_rmse_snr.png)
 
-### RMSE vs 快拍数
+**RMSE vs 快拍数**
 ![RMSE vs 快拍数](results/comparison_rmse_snapshots.png)
 
-### 相干源场景对比
+**相干源场景对比**
 ![相干源场景](results/comparison_coherent.png)
 
-其余算法函数的单独仿真结果在results里。
+---
+
+### 各算法详细结果
+
+所有仿真结果图存放于 [`results/`](results/) 文件夹，结构如下：
+
+```
+results/
+├── comparison_rmse_snr.png        # 五算法 RMSE vs SNR 对比（含 NC-CRB）
+├── comparison_rmse_snapshots.png  # 五算法 RMSE vs 快拍数对比
+├── comparison_coherent.png        # 五算法相干源场景对比
+├── ESPRIT/
+│   ├── single_estimate.png        # 单次估计效果
+│   ├── dof_test.png               # 自由度压力测试
+│   ├── rmse_vs_snr.png            # RMSE vs SNR
+│   ├── rmse_vs_snapshots.png      # RMSE vs 快拍数
+│   └── coherent.png               # 相干源场景
+├── MUSIC/
+│   ├── spectrum.png               # 空间谱
+│   ├── dof_test.png               # 自由度压力测试
+│   ├── rmse_vs_snr.png            # RMSE vs SNR
+│   ├── rmse_vs_snapshots.png      # RMSE vs 快拍数
+│   └── coherent.png               # 相干源场景
+├── L1_SVD/
+│   ├── spectrum.png               # 空间谱
+│   ├── dof_test.png               # 自由度压力测试
+│   ├── rmse_vs_snr.png            # RMSE vs SNR
+│   ├── rmse_vs_snapshots.png      # RMSE vs 快拍数
+│   └── coherent.png               # 相干源场景
+├── OMP/
+│   ├── spectrum.png               # 空间谱
+│   ├── dof_test.png               # 自由度压力测试
+│   ├── rmse_vs_snr.png            # RMSE vs SNR
+│   ├── rmse_vs_snapshots.png      # RMSE vs 快拍数
+│   └── coherent.png               # 相干源场景
+└── SBL/
+    ├── single_estimate.png        # 单次估计效果
+    ├── dof_test.png               # 自由度压力测试
+    ├── rmse_vs_snr.png            # RMSE vs SNR
+    ├── rmse_vs_snapshots.png      # RMSE vs 快拍数
+    └── coherent.png               # 相干源场景
+```
