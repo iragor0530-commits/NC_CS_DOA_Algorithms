@@ -154,22 +154,22 @@ est_theta = NC_SBL(Y, grid_theta)
 ### 五算法综合对比
 
 **RMSE vs SNR（含 NC-CRB 下界）**
-![RMSE vs SNR](results/comparison_rmse_snr.png)
+![RMSE vs SNR](results_png/comparison_rmse_snr.png)
 
 **RMSE vs 快拍数**
-![RMSE vs 快拍数](results/comparison_rmse_snapshots.png)
+![RMSE vs 快拍数](results_png/comparison_rmse_snapshots.png)
 
 **相干源场景对比**
-![相干源场景](results/comparison_coherent.png)
+![相干源场景](results_png/comparison_coherent.png)
 
 ---
 
 ### 各算法详细结果
 
-所有仿真结果图存放于 [`results/`](results/) 文件夹，结构如下：
+所有仿真结果图存放于 [`results_png/`](results_png/) 文件夹，结构如下：
 
 ```
-results/
+results_png/
 ├── comparison_rmse_snr.png        # 五算法 RMSE vs SNR 对比（含 NC-CRB）
 ├── comparison_rmse_snapshots.png  # 五算法 RMSE vs 快拍数对比
 ├── comparison_coherent.png        # 五算法相干源场景对比
